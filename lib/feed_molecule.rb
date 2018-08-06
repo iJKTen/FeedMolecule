@@ -1,5 +1,5 @@
 require "feed_molecule/version"
-require "feed_molecule/net/net"
+require "feed_molecule/net"
 
 module FeedMolecule
   # Your code goes here...
