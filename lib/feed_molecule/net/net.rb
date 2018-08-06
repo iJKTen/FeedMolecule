@@ -4,6 +4,11 @@ module NET
   end
 
   class SayHi
+
+    def initialize
+
+    end
+    
     def hello
       "Hello"
     end
