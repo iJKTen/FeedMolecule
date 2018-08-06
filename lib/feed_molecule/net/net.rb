@@ -1,14 +1,11 @@
-module NET
-  def hi
-    "Hi"
-  end
+module FeedMolecule
 
-  class SayHi
+  class NET
 
     def initialize
 
     end
-    
+
     def hello
       "Hello"
     end
