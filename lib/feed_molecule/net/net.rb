@@ -1,5 +1,5 @@
 module NET
-  def hi
+  def self.hi
     "Hi"
   end
 end

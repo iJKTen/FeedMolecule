@@ -3,7 +3,7 @@ require "feed_molecule/net/net"
 
 module FeedMolecule
   # Your code goes here...
-  def test
+  def self.test
     NET.hi
 
   end
