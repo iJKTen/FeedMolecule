@@ -16,7 +16,7 @@ module FeedMolecule
         else
           @external_url = get_href_from_list(links, "alternate")
         end
-        @author = AtomFeedAuthor.new(author[0].elements) unless author.nil?
+        @author = FeedMolecule::FeedAuthor.parse_atom_author(author[0].elements) unless author.nil?
         @date_published = parse_date(item.elements["published"].text) unless item.elements["published"].nil?
         @date_modified = parse_date(item.elements["updated"].text) unless item.elements["updated"].nil?
       end

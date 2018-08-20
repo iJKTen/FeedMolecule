@@ -18,7 +18,7 @@ module FeedMolecule
         @description = json.fetch("description", "")
         @icon = json.fetch("icon", "")
         @favicon = json.fetch("favicon", "")
-        @author = parse_json_author(json.fetch("author", nil))
+        @author = FeedMolecule::FeedAuthor.parse_json_author(json.fetch("author", nil))
         @items = parse_items(json.fetch("items", nil))
       end
 

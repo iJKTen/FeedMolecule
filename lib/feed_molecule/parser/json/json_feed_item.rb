@@ -14,7 +14,7 @@ module FeedMolecule
         @date_published = parse_date(json_item.fetch("date_published", nil))
         @date_modified = parse_date(json_item.fetch("date_modified", nil))
         @categories = json_item.fetch("tags", "")
-        @author = parse_json_author(json_item.fetch("author", nil))
+        @author = FeedMolecule::FeedAuthor.parse_json_author(json_item.fetch("author", nil))
         @entry = parse_content(json_item.fetch("content_html", nil),
                                json_item.fetch("content_text", nil))
       end

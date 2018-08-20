@@ -20,7 +20,7 @@ module FeedMolecule
         @description = xml["description"].text unless xml["description"].nil?
         @home_page_url = get_href_from_list(links, "alternate")
         @feed_url = get_href_from_list(links, "self")
-        @author = AtomFeedAuthor.new(author_xml) unless author_xml.count == 0
+        @author = FeedMolecule::FeedAuthor.parse_atom_author(author_xml) unless author_xml.count == 0
         @items = build_items(xml)
       end
 
