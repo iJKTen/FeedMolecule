@@ -1,6 +1,6 @@
 module FeedMolecule
   module Parser
-    class RSSFeedEntry < FeedMolecule::FeedEntry
+    class RSSFeedItem < FeedMolecule::FeedItem
       include FeedUtilities
 
       def initialize(item)

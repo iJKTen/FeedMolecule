@@ -25,7 +25,7 @@ module FeedMolecule
       private
 
       def parse_items(items)
-        items.map { |e| FeedMolecule::Parser::JSONFeedEntry.new(e)  }
+        items.map { |e| FeedMolecule::Parser::JSONFeedItem.new(e)  }
       end
     end
   end

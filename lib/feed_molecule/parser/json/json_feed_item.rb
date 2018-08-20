@@ -1,6 +1,6 @@
 module FeedMolecule
   module Parser
-    class JSONFeedEntry < FeedMolecule::FeedEntry
+    class JSONFeedItem < FeedMolecule::FeedItem
       include FeedUtilities
 
       def initialize(json_item)

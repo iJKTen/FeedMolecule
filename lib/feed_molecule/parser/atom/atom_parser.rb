@@ -34,7 +34,7 @@ module FeedMolecule
       end
 
       def build_item(i, xml)
-        FeedMolecule::Parser::AtomFeedEntry.new(xml["//feed/entry[#{i}]"])
+        FeedMolecule::Parser::AtomFeedItem.new(xml["//feed/entry[#{i}]"])
       end
     end
   end

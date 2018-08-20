@@ -29,7 +29,7 @@ module FeedMolecule
       end
 
       def build_item(i, xml)
-        FeedMolecule::Parser::RSSFeedEntry.new(xml["item[#{i}]"].elements)
+        FeedMolecule::Parser::RSSFeedItem.new(xml["item[#{i}]"].elements)
       end
     end
   end
